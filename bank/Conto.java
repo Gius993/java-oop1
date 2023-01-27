@@ -26,11 +26,9 @@ public class Conto {
 	//Metodo prelevare
 	
 	void saldoPrelevato(double sottrazione) {
-		if(saldoUtente > 0 && saldoUtente > sottrazione) {
+		if(saldoUtente > sottrazione) {
 			saldoUtente -= sottrazione;
-		}else {
-			saldoUtente = 0;
-		}		
+		}	
 	}
 	
 	int contoCasuale() {

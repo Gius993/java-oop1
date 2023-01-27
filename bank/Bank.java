@@ -21,12 +21,14 @@ public class Bank {
 		 if(scelta.equals("prelevare")) {
 			 System.out.println("Quanto desideri prelevare?");
 			 sottrazione = scan.nextDouble();
-			System.out.println("Hai depositatoo" + sottrazione);
+			 conto1.saldoPrelevato(sottrazione);
+			System.out.println("Hai depositatoo" + sottrazione + "il tuo saldo attuale :" + conto1.saldoUtente);
 			
 		 }else if(scelta.equals("versare")) {
 			 System.out.println("Quanto desideri Versare?");
 			 somma = scan.nextDouble();
-			System.out.println("Hai depositatoo" + somma);
+			 conto1.saldoVersato(somma);
+			System.out.println("Hai depositatoo" + somma + "il tuo saldo attuale :" + conto1.saldoUtente);
 		 }else if (scelta.equals("uscire")) {
 			 System.out.println("La sessione termina");
 		 }
